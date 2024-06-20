@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionais específicos para a esteira de rolagem de imagens */
+        .image-slider {
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-top: 20px;
+            padding: 10px 0;
+        }
+
+        .image-slider ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+        }
+
+        .image-slider ul li {
+            margin-right: 10px;
+        }
+
+        .image-slider ul li img {
+            max-width: 200px; /* Ajuste o tamanho máximo das imagens conforme necessário */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="timeline.html">Linha do Tempo</a></li>
+            <li><a href="turing.html">Teste de Turing</a></li>
+            <li><a href="creator.html">Indicações do Criador</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>História da Computação</h1>
+        <h2>Linha do Tempo</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-date="2400">
+                <h3>2400 a.C</h3>
+                <p>Ábaco</p>
+            </div>
+            <div class="timeline-item" data-date="1642">
+                <h3>1642</h3>
+                <p>Blaise Pascal</p>
+            </div>
+            <div class="timeline-item" data-date="1837">
+                <h3>1837</h3>
+                <p>Charles Babbage</p>
+            </div>
+            <div class="timeline-item" data-date="1843">
+                <h3>1843</h3>
+                <p>Ada Lovelace</p>
+            </div>
+            <div class="timeline-item" data-date="1890">
+                <h3>1890</h3>
+                <p>Herman Hollerith</p>
+            </div>
+            <div class="timeline-item" data-date="1936">
+                <h3>1936</h3>
+                <p>Alan Turing</p>
+            </div>
+            <div class="timeline-item" data-date="1945">
+                <h3>1945</h3>
+                <p>Projeto Manhattan</p>
+            </div>
+            <div class="timeline-item" data-date="1946">
+                <h3>1945</h3>
+                <p>ENIAC</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Esteira de rolagem de imagens -->
+    <div class="image-slider">
+        <h3>Imagens Relacionadas</h3>
+        <ul>
+            <li><img src="Ábaco.webp" alt="Imagem 1"></li>
+            <li><img src="Pascalina.jpg" alt="Imagem 2"></li>
+            <li><img src="Máquina.webp" alt="Imagem 3"></li>
+            <li><img src="Primeiro.png" alt="Imagem 4"></li>
+            <li><img src="Cartão.webp" alt="Imagem 5"></li>
+            <li><img src="Turing.jpeg" alt="Imagem 6"></li>
+            <li><img src="Manhattan.gif" alt="Imagem 7"></li>
+            <li><img src="ENIAC.webp" alt="Imagem 8"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <div id="modal-text"></div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 - Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
